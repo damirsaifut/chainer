@@ -1,0 +1,26 @@
+{
+    // "presets": ["env",  "react"]
+    //Parcel транспилирует ваш код с пресетом @babel/preset-env 
+    // по умолчанию, с его помощью каждый внутренний (локальные require'ы) 
+    // и внешние (node_modules) будут транспилировны под указанный target.
+    "presets": [
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-proposal-class-properties",
+        ],
+        [
+            "@babel/plugin-transform-runtime"
+        ],
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./src",
+                    "./public"
+                ]
+            }
+        ]
+    ]
+}

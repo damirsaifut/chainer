@@ -1,0 +1,34 @@
+// main: ../index.less
+
+*, 
+*::before,
+*::after{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.35;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    @media(max-width: calc(@--sm - 1px)) {
+        font-size: 12px !important;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+header,
+aside,
+main,
+footer,
+section {
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+}
